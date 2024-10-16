@@ -1,0 +1,23 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .stackContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 5vw;
+    height: 12vw;
+    padding: 7vw 7vw 0 0;
+  }
+
+  .resultContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10vw;
+    height: 12vw;
+    padding: 0 7vw 7vw 0;
+  }
+}

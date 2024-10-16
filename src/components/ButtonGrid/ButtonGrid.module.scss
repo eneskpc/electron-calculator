@@ -1,0 +1,48 @@
+.gridContainer {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.zeroContainer {
+      grid-column: 1/3;
+    }
+
+    button {
+      background-color: #e8f0f3;
+      border: none;
+      font-size: 5vw;
+      width: 10vw;
+      height: 10vw;
+      border-radius: 25px;
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.9);
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &.clear {
+        background-color: #f8eced;
+        color: #c25d6f;
+      }
+
+      &.operator {
+        background-color: #ff9502;
+        color: #fff;
+      }
+
+      &.zero {
+        width: 35vw;
+      }
+    }
+  }
+}
